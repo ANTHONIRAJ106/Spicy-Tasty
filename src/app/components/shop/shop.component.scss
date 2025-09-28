@@ -3,13 +3,12 @@ html {
 }
 
 section, div[id] {
-  scroll-margin-top: 80px; /* adjust based on navbar height */
+  scroll-margin-top: 80px; 
 }
 
 
 /* ✅ Navbar styles */
 .navbar {
-  background-color: #212529; /* dark bg */
   padding: 0.8rem 1rem;
   position: fixed;
   top: 0;
@@ -120,6 +119,14 @@ section, div[id] {
 }
 
 .offer img:hover {
+  transform: scale(1.05);
+}
+
+#gallery img {
+  transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
   transform: scale(1.05);
 }
 
