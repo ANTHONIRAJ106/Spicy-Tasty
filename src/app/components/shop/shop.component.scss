@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+section, div[id] {
+  scroll-margin-top: 80px; /* adjust based on navbar height */
+}
+
+
 /* ✅ Navbar styles */
 .navbar {
   background-color: #212529; /* dark bg */

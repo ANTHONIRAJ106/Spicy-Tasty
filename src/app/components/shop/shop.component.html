@@ -199,16 +199,17 @@
 
     <!-- CTA Section -->
     <div class="container px-0">
-        <div class="bg1">
-            <div class="container text-center text-white">
-                <h1 class="display-4">Book A Table Now!</h1>
-                <button class="btn btn-danger btn-lg mt-3">BOOK NOW</button>
-            </div>
+    <div class="text-center py-5" style="background-color: #FFEBCD;">
+        <div class="container">
+            <h1 class="display-4" style="color: #E65100;">Book A Table Now!</h1>
+            <button class="btn btn-danger btn-lg mt-3">BOOK NOW</button>
         </div>
     </div>
+</div>
+
 
     <!-- Chefs Section -->
-    <div class="container py-2" id="chef">
+    <div class="container py-2 mt-5" id="chef">
         <div class="row">
             <div class="col-12 text-center mb-3">
                 <h3 style="color: red;">Expert Chefs</h3>
@@ -261,8 +262,8 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mt-5">
-            <a href="#" class="btn btn-danger px-4">Meet Full Team</a>
+        <div class="text-center">
+            <button class="btn btn-danger btn-lg mt-3">Meet Full Team</button>
         </div>
     </div>
 
@@ -300,15 +301,15 @@
                 <img src="gallery-img8.jpg" alt="Gallery Image 8" class="img-fluid rounded shadow">
             </div>
         </div>
-        <div class="text-center mt-3">
-            <a href="#" class="btn btn-danger px-4">See More</a>
+        <div class="text-center">
+             <button class="btn btn-danger btn-lg mt-3">See More</button>
         </div>
     </div>
 
     <!-- Blog Section -->
     <div class="container py-2" id="blog">
         <div class="row">
-            <div class="col-12 text-center mb-3 mt-5">
+            <div class="col-12 text-center mb-3 mt-4">
                 <h3 style="color: red;">From Our Blog</h3>
                 <h2>Latest News</h2>
             </div>
@@ -553,5 +554,24 @@
             </div>
         </div>
     </footer>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar a[href^='#']");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", function () {
+        // Close navbar on mobile after click
+        if (navbarCollapse.classList.contains("show")) {
+          new bootstrap.Collapse(navbarCollapse).toggle();
+        }
+      });
+    });
+  });
+</script>
+
+
+
 </body>
+
 </html>
